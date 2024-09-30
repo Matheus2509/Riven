@@ -5,11 +5,13 @@ section.slider{
     height: auto;
     padding: 0;
     overflow: hidden;
+
 }
 .slider-riven{
     width: 400%;
     height: auto;
     display: flex;
+ 
 }
 .slider-riven input{
     display: none;
