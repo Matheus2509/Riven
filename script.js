@@ -21,22 +21,33 @@ function proximaImg(){
 
 var audio = document.getElementById('backgroundMusic');
 
-// Verifica se o autoplay foi bloqueado
-document.addEventListener('DOMContentLoaded', function() {
-    var playPromise = audio.play();
+        // Verifica se o autoplay foi bloqueado
+        document.addEventListener('DOMContentLoaded', function() {
+            var playPromise = audio.play();
 
-    if (playPromise !== undefined) {
-        playPromise.then(function() {
-            // O áudio começou a tocar automaticamente
-        }).catch(function(error) {
-            // Autoplay bloqueado. Opção de iniciar manualmente.
-            console.log('Autoplay bloqueado: adicionando botão de play.');
-            var button = document.createElement('button');
-            button.innerHTML = "Reproduzir Música";
-            button.onclick = function() {
-                audio.play();
-            };
-            document.body.appendChild(button);
-        });
-    }
+            if (playPromise !== undefined) {
+                playPromise.then(function() {
+                    // O áudio começou a tocar automaticamente
+                }).catch(function(error) {
+                    // Autoplay bloqueado, adicionando botão de play.
+                    console.log('Autoplay bloqueado: adicionando botão de play.');
+                    var button = document.createElement('button');
+                    button.innerHTML = "Reproduzir Música";
+                    button.style.fontSize = '18px';
+                    button.style.padding = '10px 20px';
+                    button.style.marginTop = '20px';
+
+                    // Evento para clique e toque
+                    button.addEventListener('click', playAudio);
+                    button.addEventListener('touchstart', playAudio);
+
+                    // Função para iniciar o áudio
+                    function playAudio() {
+                        audio.play();
+                        button.remove(); // Remove o botão após o toque/clique
+                    }
+
+                    document.body.appendChild(button);
+                });
+            }
 });
