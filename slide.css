@@ -47,6 +47,8 @@ section.slider{
 }
 .nav-manual .manual-bnt:hover{
     background-color: #17270C;
+    border: 1px solid #91B47C;
+    box-shadow: 1px 1px 7px #91B47C;
 }
 
 /*

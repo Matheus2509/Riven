@@ -2,5 +2,40 @@
 
 body{
     margin: 0%;
-    padding: 0%;    
+    padding: 0%; 
+    background-color: #1B1306; 
 }
+header{
+    display: flex;             /* Usa flexbox */
+    justify-content: space-between; /* Espalha as divs entre os extremos */
+    align-items: center;  
+    background-color: black;
+    padding: 10px;
+
+
+}
+header h1{
+    color: white;
+    text-align: right;
+    font-size: 30px;
+}
+header h1:hover{
+    color: #FFD700;
+    cursor: pointer;
+}
+header nav{
+    Display: flex;
+    text-align: center;
+    Display: flex;
+    Justify-content: center;
+    width: 100vh;
+    justify-content: space-between;
+    
+}
+header a {
+    padding-left: 50px;
+    color:white;
+    text-decoration: none;
+}
+
+
