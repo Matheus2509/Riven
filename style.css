@@ -3,12 +3,10 @@
 *{
     margin: 0%;
     padding: 0%;
-    overflow-y: none;
 }
 body{
-    background-color: #1B1306; 
-    height:100vh;
-    height:100vh;
+    background-color: #1B1306;
+
 }
 /*
 
@@ -28,11 +26,11 @@ header{
     justify-content: space-between; /* Espalha as divs entre os extremos */
     align-items: center;  
     padding: 5px;
-    width: 100vh;
+    width: 70vw;
 }
 header h1{
     color: white;
-    font-size: 5vh;
+    font-size: 4vh;
     padding-right: 1vh;
     
 }
@@ -47,6 +45,7 @@ header nav{
     
 }
 header a {
+    font-size: 2vh;
     color:white;
     text-decoration: none;
     padding: 2px;
@@ -62,19 +61,41 @@ main{
     margin: 0% 1%;
     background-color: #788170;
 }
-.intro{
-    color: white;
-    margin-top: 0%;
-    display: flex;             /* Usa flexbox */
-    justify-content: space-between; /* Espalha as divs entre os extremos */
-    align-items: center;  
-    text-align: center;
+/* Estilizando o container que engloba a imagem e o texto */
+.container {
+    overflow-x: hidden;
+    display: flex; /* Layout flexível */
+    justify-content: space-between; /* Espaço entre a imagem e o texto */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    flex-wrap: wrap; /* Permite que os itens "quebrem" para linhas abaixo em telas pequenas */
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding no cálculo das dimensões */
 }
-.intro h1{
-    color:#17270C;
-    margin-top: 20px;
-    font-size: 35px;
+/* Estilos do texto */
+.loren {
+width: 65%; /* O texto ocupa % da largura da tela */
+padding: 20px;
+text-align: center;
 }
-.intro p{
-    font-size: 20px;
+.loren h1{
+    font-size: 4vh;
+}
+.loren p{
+     font-size: 2vh;
+}
+/* Estilos da imagem */
+.container img {
+    width: 25%; /* A imagem ocupa % da largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+}
+/* Responsividade para telas menores */
+@media (max-width: 768px) 
+{
+.container {
+        flex-direction: column; /* Empilha a imagem e o texto em uma coluna */
+        text-align: center; /* Centraliza o texto */
+}
+    .container img, .loren {
+        width: 100%; /* Ambos ocupam 100% da largura da tela */
+    }
 }
