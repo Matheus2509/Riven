@@ -28,7 +28,7 @@ header{
     justify-content: space-between; /* Espalha as divs entre os extremos */
     align-items: center;  
     padding: 5px;
-    width: 300vh;
+    width: 100vh;
 }
 header h1{
     color: white;
@@ -41,7 +41,7 @@ header h1:hover{
     cursor: pointer;
 }
 header nav{
-    width: 50vh;
+    width: 100vh;
     justify-content: space-between;
     padding-left: 2vh;
     
