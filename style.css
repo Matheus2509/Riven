@@ -1,15 +1,32 @@
 @charset "UTF-8";
 
-body{
+*{
     margin: 0%;
     padding: 0%; 
-    background-color: #1B1306; 
 }
+body{
+    background-color: #1B1306; 
+    overflow-x: hidden;
+    height:100vh;
+    height:100vh;
+}
+/*
+
+Cabeçalho
+
+*/
 header{
+    background-color: black;
+    height: 100px;
+    Display: flex;
+    align-items: center;
+    Justify-content: center;
+}
+#conteudo_header{
+    overflow: hidden;
     display: flex;             /* Usa flexbox */
     justify-content: space-between; /* Espalha as divs entre os extremos */
     align-items: center;  
-    background-color: black;
     padding: 5px;
 }
 header h1{
@@ -23,8 +40,6 @@ header h1:hover{
     cursor: pointer;
 }
 header nav{
-    Display: flex;
-    Display: flex;
     width: 50vh;
     justify-content: space-between;
     padding-left: 2vh;
@@ -34,6 +49,31 @@ header a {
     color:white;
     text-decoration: none;
     padding: 2px;
+    margin: 8px;
 }
+/*
 
+Conteudo Principal
 
+*/
+main{
+    padding: 0% 1%;
+    margin: 0% 1%;
+    background-color: #788170;
+}
+.intro{
+    color: white;
+    margin-top: 0%;
+    display: flex;             /* Usa flexbox */
+    justify-content: space-between; /* Espalha as divs entre os extremos */
+    align-items: center;  
+    text-align: center;
+}
+.intro h1{
+    color:#17270C;
+    margin-top: 20px;
+    font-size: 35px;
+}
+.intro p{
+    font-size: 20px;
+}

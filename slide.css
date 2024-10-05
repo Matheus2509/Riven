@@ -5,6 +5,7 @@ section.slider{
     height: auto;
     padding: 0;
     overflow: hidden;
+    border-radius: 7px;
 
 }
 .slider-riven{
@@ -23,15 +24,15 @@ section.slider{
     position: relative;
     text-align: center;
     transition: 1s;
-
 }
 .slide-box img{
     width: 100%;
+    border-radius: 7px;
 }
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 35%;
+    margin-top: 34%;
     display: flex;
     justify-content: center;
 }

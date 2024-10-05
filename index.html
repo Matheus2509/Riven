@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-      
+        <div id="conteudo_header">
         <nav>
             <a href="#">Histórias</class=>
             <a href="#">Habilidades</a>
@@ -19,49 +19,60 @@
             <a href="#">Skins</a>
         </nav>
         <h1>Riven</h1>
-    </header>
-
-     <!-- slide, Css está em um arquivo separado "slide.css" -->
-    <section class="slider">
-        <div class="slider-riven">
-            <input type="radio" name="btn-radio" id="radio1">
-            <input type="radio" name="btn-radio" id="radio2">
-            <input type="radio" name="btn-radio" id="radio3">
-            <input type="radio" name="btn-radio" id="radio4">
-
-            <div class="slide-box primeira">
-                <img class="img" src="img/skins/Riven_base.jpg" alt="Riven">
-            </div>
-            <div class="slide-box">
-                <img class="img" src="img/skins/emissaria.jpg" alt="Riven Emissaria da Luz">
-            </div>
-            <div class="slide-box">
-                <img class="img" src="img/skins/coelha_de_batalha.jpg" alt="Riven Coelha da Batalha">
-            </div>
-            <div class="slide-box">
-                <img class="img" src="img/skins/florescer.jpg" alt="Riven Florescer Espiritual">
-            </div>
-            <div class="nav-auto">
-                <div class="auto-bnt1"></div>
-                <div class="auto-bnt2"></div>
-                <div class="auto-bnt3"></div>
-                <div class="auto-bnt4"></div>
-            </div>
-            <div class="nav-manual">
-                <label for="radio1" class="manual-bnt"></label>
-                <label for="radio2" class="manual-bnt"></label>
-                <label for="radio3" class="manual-bnt"></label>
-                <label for="radio4" class="manual-bnt"></label>
-            </div>
         </div>
-    </section>
+    </header>
     <main>
+        <!-- slide, Css está em um arquivo separado "slide.css" -->
+        <section class="slider">
+            <div class="slider-riven">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
+
+                <div class="slide-box primeira">
+                    <img class="img" src="img/skins/Riven_base.jpg" alt="Riven">
+                </div>
+                <div class="slide-box">
+                    <img class="img" src="img/skins/emissaria.jpg" alt="Riven Emissaria da Luz">
+                </div>
+                <div class="slide-box">
+                    <img class="img" src="img/skins/coelha_de_batalha.jpg" alt="Riven Coelha da Batalha">
+                </div>
+                <div class="slide-box">
+                    <img class="img" src="img/skins/florescer.jpg" alt="Riven Florescer Espiritual">
+                </div>
+                <div class="nav-auto">
+                    <div class="auto-bnt1"></div>
+                    <div class="auto-bnt2"></div>
+                    <div class="auto-bnt3"></div>
+                    <div class="auto-bnt4"></div>
+                </div>
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-bnt"></label>
+                    <label for="radio2" class="manual-bnt"></label>
+                    <label for="radio3" class="manual-bnt"></label>
+                    <label for="radio4" class="manual-bnt"></label>
+                </div>
+            </div>
+        </section>
+
         <audio id="backgroundMusic" autoplay loop>
             <source src="audios/musica.mp3" type="audio/mpeg">
             Seu navegador não suporta o elemento de áudio.
-            </audio>
+        </audio>
 
-
+        <section class="intro">
+            <div class="loren">
+                <h1>“A espada de um guerreiro reflete a verdade em seu coração. <br>A minha é sombria... e partida ao meio”.</h1><br>
+                <p>
+                    Riven, uma exímia espadachim nas tropas de Noxus, alcançou os altos escalões do exército com sua convicção e extrema eficiência, sendo recompensada com uma lâmina rúnica lendária e seu próprio bando de guerra. No entanto, no front ioniano, a confiança de Riven em sua nação foi testada e, no fim, estraçalhada. Ela cortou todos os laços com o império e foi em busca de seu lugar em um mundo devastado, mesmo diante dos rumores de que Noxus havia passado por uma transformação. Agora, acorrentada e forçada a retornar, ela vai enfrentar o julgamento de sua antiga terra natal...
+                </p>
+            </div>
+            <div class="sem_fundo">
+                <img src="img/extras/sem fundo.webp" alt="Riven" width="350vh">
+            </div>
+        </section>
 
     </main>
 </body>
