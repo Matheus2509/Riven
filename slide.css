@@ -5,16 +5,20 @@ section.slider{
     height: auto;
     padding: 0;
     overflow: hidden;
-    border-radius: 7px;
+
 
 }
 .slider-riven{
     width: 400%;
     height: auto;
     display: flex;
+
  
 }
 .slider-riven input{
+    display: none;
+}
+.img-mobile{
     display: none;
 }
 
@@ -27,7 +31,7 @@ section.slider{
 }
 .slide-box img{
     width: 100%;
-    border-radius: 7px;
+
 }
 .nav-manual, .nav-auto{
     position: absolute;
@@ -40,7 +44,7 @@ section.slider{
 .nav-manual .manual-bnt, .nav-auto div{
     border: 1px solid #17270C;
     padding: 10px;
-    border-radius: 50%;
+   border-radius: 50%;
     cursor: pointer;
 }
 .nav-manual .manual-bnt:not(:last-child), .nav-auto div:not(:last-child){
@@ -80,5 +84,14 @@ Mostrar img referente ao botão marcado
 #radio4:checked ~ .primeira{
     margin-left: -75%;
 }
-
-
+@media screen and (max-width: 768px) {
+    .img{
+        display: none;
+    }
+    .img-mobile{
+        display: block;
+    }
+    .nav-auto, .nav-manual{
+        margin-top: 73%;
+    }
+}
