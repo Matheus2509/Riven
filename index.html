@@ -76,16 +76,18 @@
             <div id="conjunto">
                 <h1 >Habilidades</h1>
                 <div id="img-habi">
-                    <div><img src="img/habilidades/passiva.png" alt=""></div>
-                    <div><img src="img/habilidades/Q.png" alt=""></div>
-                    <div><img src="img/habilidades/w.png" alt=""></div>
-                    <div><img src="img/habilidades/E.png" alt=""></div>
-                    <div><img src="img/habilidades/R.png" alt=""></div>
+                    <div id="pas" onclick="pas()"><img src="img/habilidades/passiva.png" alt=""></div>
+                    <div id="Q" onclick="Q()"><img src="img/habilidades/Q.png" alt=""></div>
+                    <div id="W" onclick="W()"><img src="img/habilidades/w.png" alt=""></div>
+                    <div id="E" onclick="E()"><img src="img/habilidades/E.png" alt=""></div>
+                    <div id="R" onclick="R()"><img src="img/habilidades/R.png" alt=""></div>
                 </div>
             </div>
             <div id="l-videos">
-                <video src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0092/ability_0092_P1.mp4" controls ></video>
-                <h3 id="representação">Passiva</h3>
+                <div id="video_base">
+                <video src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0092/ability_0092_P1.mp4" muted loop autoplay ></video>
+                </div>
+                <h1 id="representação">Passiva</h1>
                 <p id="descrição">As habilidades de Riven carregam sua lâmina, e seus ataques básicos consomem cargas para causar dano adicional.</p>
             </div>
         </div>

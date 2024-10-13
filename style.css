@@ -142,13 +142,14 @@ color: black;
     justify-content: space-around; 
     padding: 1vw;
     width: 90%;
+    height: 100px;
 }
 
 #img-habi img {
     width: 7vw; /* Define a largura das imagens */
     height: auto; /* Mantém a proporção da imagem */
     filter: brightness(0.5); /* Deixa a imagem 50% mais escura */
-    border-radius: 2vw;
+    border-radius: 1vw;
 
 }
 #img-habi img:hover {
@@ -164,11 +165,20 @@ color: black;
     border-radius: 2vw;
   
 }
+#habilidades h1{
+    font-size: 3vh;
+  
+}
 #l-videos {
     color: black;
     padding: 1%;
-    font-size: 1.2em;
     width: 80vw;    
+}
+#l-videos h1{
+    font-size: 3vh;
+}
+#l-videos p{
+    font-size: 2vh;
 }
 @media (max-width: 768px) 
 {
@@ -188,12 +198,12 @@ color: black;
     width: 85vw;
 }
 #conjunto img{
-    width: 15vw;
+    width: 12vw;
     height: auto;
     padding: 2%;
 }
 #conjunto img:hover{
-    width: 16vw;
+    width: 13vw;
     height: auto;
 }
 #l-videos{
