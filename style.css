@@ -105,7 +105,7 @@ color: black;
         width: 90%; /* Ambos ocupam 100% da largura da tela */
     }
     #container img{
-        width: 30%;
+        width: 40%;
     }
 }
 
@@ -159,13 +159,14 @@ color: black;
 #habilidades {
         flex-direction: column; /* Empilha a imagem e o texto em uma coluna */
         text-align: center; /* Centraliza o texto */
-        width: 85vw;
+        width: 100vw;
+        margin-left: -9%;
 }
 #img-habi {
-    width: 90%; /* Ambos ocupam 100% da largura da tela */
+    width: 90vw; /* Ambos ocupam 100% da largura da tela */
 }
 #l-videos{
-    width: 45vh;
+    width: 80vh;
     font-size: 3vh;
  }
  
