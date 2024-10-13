@@ -134,7 +134,7 @@ color: black;
 #conjunto{
     padding: 1%;
     align-items: center;
-    height: 25vh;
+    height: auto;
     width: 85vw;
 }
 #img-habi{
@@ -182,18 +182,19 @@ color: black;
 
 }#img-habi {
     width: 80vw;  
-    height: 50px;
+    height: 10vh;
 }
 #conjunto{
-    height: 25vh;
+    height: auto;
     width: 85vw;
 }
 #conjunto img{
-    width: 12vw;
+    width: 15vw;
     height: auto;
+    padding: 2%;
 }
 #conjunto img:hover{
-    width: 13vw;
+    width: 16vw;
     height: auto;
 }
 #l-videos{
