@@ -12,6 +12,7 @@
 }
 body{
     background-color: #788170;
+    overflow-x:hidden;
 
 }
 body h1{
@@ -35,7 +36,6 @@ header{
 
 }
 #conteudo_header{
-    overflow: hidden;
     display: flex;             /* Usa flexbox */
     justify-content: space-between; /* Espalha as divs entre os extremos */
     align-items: center;  
@@ -68,7 +68,6 @@ header a {
 
 /* Estilizando o container que engloba a imagem e o texto */
 #container {
-    overflow-x: hidden;
     display: flex; /* Layout flexível */
     justify-content: space-between; /* Espaço entre a imagem e o texto */
     align-items: center; /* Alinha os itens verticalmente no centro */
@@ -97,9 +96,18 @@ color: black;
 /* Responsividade para telas menores */
 @media (max-width: 768px) 
 {
+    #conteudo_header{
+        display: flex;             /* Usa flexbox */
+        justify-content: space-between; /* Espalha as divs entre os extremos */
+        align-items: center;  
+        padding: 5px;
+        width: 90vw;
+    }
+
+
 #container {
-        flex-direction: column; /* Empilha a imagem e o texto em uma coluna */
-        text-align: center; /* Centraliza o texto */
+    flex-direction: column; /* Empilha a imagem e o texto em uma coluna */
+    text-align: center; /* Centraliza o texto */
 }
     .loren {
         width: 90%; /* Ambos ocupam 100% da largura da tela */
@@ -110,37 +118,41 @@ color: black;
 }
 
 #habilidades{
+    overflow-x: hidden;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;     
     align-items: center; 
     text-align: center;
-    width: 95vw;
-    padding: 1%;
+    width: 100vw;
+    height: auto;
     padding-top: 15vh;
     padding-bottom: 15vh;
     background-color: #91B47C;
     color: white;
 
 }
+#conjunto{
+    padding: 1%;
+    align-items: center;
+    height: 25vh;
+    width: 85vw;
+}
 #img-habi{
     display: flex; 
     justify-content: space-around; 
-    align-items: center; 
-    padding: 10px;
-    width: 60%;
+    padding: 1vw;
+    width: 90%;
 }
 
 #img-habi img {
-    width: 70%; /* Define a largura das imagens */
+    width: 7vw; /* Define a largura das imagens */
     height: auto; /* Mantém a proporção da imagem */
-    margin: 10px; /* Adiciona espaço ao redor das imagens */
-    padding: 10px;
     filter: brightness(0.5); /* Deixa a imagem 50% mais escura */
-    border-radius: 20px;
+    border-radius: 2vw;
 
 }
 #img-habi img:hover {
-    width: 80%; 
+    width: 8vw; 
     height: auto;
 }
 #img-habi img:active{
@@ -148,26 +160,46 @@ color: black;
 }
 
 #habilidades video{
-    width: 100%;
+    width: 95%;
+    border-radius: 2vw;
+  
 }
 #l-videos {
     color: black;
+    padding: 1%;
     font-size: 1.2em;
+    width: 80vw;    
 }
 @media (max-width: 768px) 
 {
 #habilidades {
-        flex-direction: column; /* Empilha a imagem e o texto em uma coluna */
-        text-align: center; /* Centraliza o texto */
-        width: 100vw;
-        margin-left: -9%;
+    flex-direction: column; /* Empilha a imagem e o texto em uma coluna */
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+}#img-habi {
+    width: 80vw;  
+    height: 50px;
 }
-#img-habi {
-    width: 90vw; /* Ambos ocupam 100% da largura da tela */
+#conjunto{
+    height: 25vh;
+    width: 85vw;
+}
+#conjunto img{
+    width: 12vw;
+    height: auto;
+}
+#conjunto img:hover{
+    width: 13vw;
+    height: auto;
 }
 #l-videos{
-    width: 80vh;
-    font-size: 3vh;
- }
- 
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width:80vw;
+    font-size: 5vw;
+}
 }
