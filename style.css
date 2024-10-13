@@ -161,10 +161,12 @@ color: black;
         text-align: center; /* Centraliza o texto */
         width: 85vw;
 }
-    #img-habi {
-        width: 90%; /* Ambos ocupam 100% da largura da tela */
-    }
-    #l-videos{
-        width: 45vh;
-    }
+#img-habi {
+    width: 90%; /* Ambos ocupam 100% da largura da tela */
+}
+#l-videos{
+    width: 45vh;
+    font-size: 3vh;
+ }
+ 
 }
