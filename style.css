@@ -213,3 +213,25 @@ color: black;
     font-size: 5vw;
 }
 }
+
+/*Histórias */
+
+#historia {
+    padding-top: 2vh;
+    margin: 8vh; 
+    margin-bottom: 6vh;
+}
+#historia h2{
+    text-align: center;
+}
+.colunas{
+    margin: 2vh;
+    text-align: center;
+    border: 1px black solid;
+
+}
+#historia a{
+    text-align: left;
+    font-size: 3vh;
+    margin: 0 3vh 0 3vh
+}
