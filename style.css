@@ -7,6 +7,7 @@
  --normal:"Roboto", sans-serif;
 }
 *{
+    transition: 20ms;
     margin: 0%;
     padding: 0%;
 }
@@ -144,6 +145,12 @@ color: black;
     width: 90%;
     height: 100px;
 }
+.img-alterada {
+    transition: 0.3s !important;
+    width: 8vw !important;
+    height: auto !important;
+    filter: brightness(1.0) !important;
+}
 
 #img-habi img {
     width: 7vw; /* Define a largura das imagens */
@@ -153,11 +160,13 @@ color: black;
 
 }
 #img-habi img:hover {
+    transition: 0.3s;
     width: 8vw; 
     height: auto;
 }
 #img-habi img:active{
-    filter: brightness(1.0); /* Deixa a imagem 50% mais escura */
+    filter: brightness(1.0);
+    transition: 0.3s;
 }
 
 #habilidades video{
