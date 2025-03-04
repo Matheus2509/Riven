@@ -10,8 +10,7 @@ section.slider{
     width: 400%;
     height: auto;
     display: flex;
-
- 
+    border: #17270C ;
 }
 .slider-riven input{
     display: none;
