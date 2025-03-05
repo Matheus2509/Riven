@@ -284,7 +284,25 @@ header a {
     filter: brightness(1.2);
     cursor: pointer;
 }
+#skins{
+    text-align: center;
+}
+#skinsRiven{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+#skinsRiven img{
+    height: 120px;
+    width: auto;
 
+}
+.Class_Skins{
+    height: auto;
+    width: 250px;
+    padding: 2px;
+    text-align: center;
+}
 
 @media (max-width: 768px) {
     #conteudo_header {
