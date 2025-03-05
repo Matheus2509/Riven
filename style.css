@@ -2,66 +2,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
- --titulo:"Outfit", sans-serif;
- --normal:"Roboto", sans-serif;
+:root {
+    --titulo: "Outfit", sans-serif;
+    --normal: "Roboto", sans-serif;
 }
-*{
+
+* {
     transition: 20ms;
     margin: 0%;
     padding: 0%;
 }
-body{
+
+body {
     background-color: #788170;
-    overflow-x:hidden;
+    overflow-x: hidden;
 
 }
-body h1{
+
+body h1 {
     font-family: var(--titulo)
 }
-body p{
+
+body p {
     font-family: var(--normal);
     font-weight: 300;
     font-style: normal;
 }
+
 /*
 
 Cabeçalho
 
 */
-header{
+header {
     background-color: black;
     height: 100px;
     Display: flex;
     Justify-content: center;
 
 }
-#conteudo_header{
-    display: flex;             /* Usa flexbox */
-    justify-content: space-between; /* Espalha as divs entre os extremos */
-    align-items: center;  
+
+#conteudo_header {
+    display: flex;
+    /* Usa flexbox */
+    justify-content: space-between;
+    /* Espalha as divs entre os extremos */
+    align-items: center;
     padding: 5px;
     width: 70vw;
 }
-header h1{
+
+header h1 {
     color: white;
     font-size: 4vh;
     padding-right: 1vh;
-    
+
 }
-header h1:hover{
+
+header h1:hover {
     color: #FFD700;
     cursor: pointer;
 }
-header nav{
+
+header nav {
     width: 100vh;
     justify-content: space-between;
     padding-left: 2vh;
-    
+
 }
+
 header a {
     font-size: 2vh;
-    color:white;
+    color: white;
     text-decoration: none;
     padding: 2px;
     margin: 8px;
@@ -69,60 +81,49 @@ header a {
 
 /* Estilizando o container que engloba a imagem e o texto */
 #container {
-    display: flex; /* Layout flexível */
-    justify-content: space-between; /* Espaço entre a imagem e o texto */
-    align-items: center; /* Alinha os itens verticalmente no centro */
-    flex-wrap: wrap; /* Permite que os itens "quebrem" para linhas abaixo em telas pequenas */
+    display: flex;
+    /* Layout flexível */
+    justify-content: space-between;
+    /* Espaço entre a imagem e o texto */
+    align-items: center;
+    /* Alinha os itens verticalmente no centro */
+    flex-wrap: wrap;
+    /* Permite que os itens "quebrem" para linhas abaixo em telas pequenas */
     padding: 20px;
-    box-sizing: border-box; /* Inclui padding no cálculo das dimensões */
+    box-sizing: border-box;
+    /* Inclui padding no cálculo das dimensões */
 }
+
 /* Estilos do texto */
 .loren {
-width: 65%; /* O texto ocupa % da largura da tela */
-padding: 20px;
-text-align: center;
-color: black;
+    width: 65%;
+    /* O texto ocupa % da largura da tela */
+    padding: 20px;
+    text-align: center;
+    color: black;
 }
-.loren h1{
+
+.loren h1 {
     font-size: 3vh;
 }
-.loren p{
-     font-size: 2vh;
+
+.loren p {
+    font-size: 2vh;
 }
+
 /* Estilos da imagem */
 #container img {
-    width: 25%; /* A imagem ocupa % da largura da tela */
-    height: auto; /* Mantém a proporção da imagem */
-}
-/* Responsividade para telas menores */
-@media (max-width: 768px) 
-{
-    #conteudo_header{
-        display: flex;             /* Usa flexbox */
-        justify-content: space-between; /* Espalha as divs entre os extremos */
-        align-items: center;  
-        padding: 5px;
-        width: 90vw;
-    }
-
-
-#container {
-    flex-direction: column; /* Empilha a imagem e o texto em uma coluna */
-    text-align: center; /* Centraliza o texto */
-}
-    .loren {
-        width: 90%; /* Ambos ocupam 100% da largura da tela */
-    }
-    #container img{
-        width: 40%;
-    }
+    width: 25%;
+    /* A imagem ocupa % da largura da tela */
+    height: auto;
+    /* Mantém a proporção da imagem */
 }
 
-#habilidades{
+#habilidades {
     overflow-x: hidden;
     display: flex;
-    justify-content: space-between;     
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     width: 100vw;
     height: auto;
@@ -132,19 +133,22 @@ color: black;
     color: white;
 
 }
-#conjunto{
+
+#conjunto {
     padding: 1%;
     align-items: center;
     height: auto;
     width: 85vw;
 }
-#img-habi{
-    display: flex; 
-    justify-content: space-around; 
+
+#img-habi {
+    display: flex;
+    justify-content: space-around;
     padding: 1vw;
     width: 90%;
     height: 100px;
 }
+
 .img-alterada {
     transition: 0.3s !important;
     width: 8vw !important;
@@ -153,94 +157,199 @@ color: black;
 }
 
 #img-habi img {
-    width: 7vw; /* Define a largura das imagens */
-    height: auto; /* Mantém a proporção da imagem */
-    filter: brightness(0.5); /* Deixa a imagem 50% mais escura */
+    width: 7vw;
+    /* Define a largura das imagens */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    filter: brightness(0.5);
+    /* Deixa a imagem 50% mais escura */
     border-radius: 1vw;
 
 }
+
 #img-habi img:hover {
     transition: 0.3s;
-    width: 8vw; 
+    width: 8vw;
     height: auto;
 }
-#img-habi img:active{
+
+#img-habi img:active {
     filter: brightness(1.0);
     transition: 0.3s;
 }
 
-#habilidades video{
+#habilidades video {
     width: 95%;
     border-radius: 2vw;
-  
+
 }
-#habilidades h1{
+
+#habilidades h1 {
     font-size: 3vh;
-  
+
 }
+
 #l-videos {
     color: black;
     padding: 1%;
-    width: 80vw;    
+    width: 80vw;
+    transition: 1s;
 }
-#l-videos h1{
+
+#l-videos h1 {
     font-size: 3vh;
 }
-#l-videos p{
+
+#l-videos p {
     font-size: 2vh;
 }
-@media (max-width: 768px) 
-{
-#habilidades {
-    flex-direction: column; /* Empilha a imagem e o texto em uma coluna */
-    align-items: center;
-    width: 100vw;
-    height: auto;
-    padding-top: 5vh;
-
-}#img-habi {
-    width: 80vw;  
-    height: 10vh;
-}
-#conjunto{
-    height: auto;
-    width: 85vw;
-}
-#conjunto img{
-    width: 12vw;
-    height: auto;
-    padding: 2%;
-}
-#conjunto img:hover{
-    width: 13vw;
-    height: auto;
-}
-#l-videos{
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    width:80vw;
-    font-size: 5vw;
-}
-}
-
 /*Histórias */
 
 #historia {
     padding-top: 2vh;
-    margin: 8vh; 
+    margin: 8vh;
     margin-bottom: 6vh;
 }
-#historia h2{
+
+#historia h2 {
     text-align: center;
 }
-.colunas{
+
+.colunas {
     margin: 2vh;
     text-align: center;
     border: 1px black solid;
 
 }
-#historia a{
+
+#historia a {
     text-align: left;
     font-size: 3vh;
     margin: 0 3vh 0 3vh
 }
+#LOR{
+ width: 98%;
+ margin: 1%;
+
+}
+#runeterra{
+    background-image: url('img/runeterra/fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-items: center;
+    transition: 0.5s;
+    height: 700px;
+    width: auto;
+    display: block;
+}
+#runeterra img:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+
+}
+#Cartas_Principais{
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+}
+#Tabuleiro_Runeterra{
+    background-image: url('img/runeterra/Tabuleiro.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-items: center;
+    align-items: center;
+    height: 800px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#Carta_Escada_Amostra img{
+    padding-top:80px;
+    text-align: center;
+}
+#Cartas_espadas{
+    padding-bottom: 40px;
+    text-align: center;
+}
+#Cartas_espadas img{
+ width: 130px;
+ height: auto;
+}
+#Cartas_espadas img:hover{
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    #conteudo_header {
+        display: flex;
+        /* Usa flexbox */
+        justify-content: space-between;
+        /* Espalha as divs entre os extremos */
+        align-items: center;
+        padding: 5px;
+        width: 90vw;
+    }
+
+
+    #container {
+        flex-direction: column;
+        /* Empilha a imagem e o texto em uma coluna */
+        text-align: center;
+        /* Centraliza o texto */
+    }
+
+    .loren {
+        width: 90%;
+        /* Ambos ocupam 100% da largura da tela */
+    }
+
+    #container img {
+        width: 40%;
+    }
+
+    #habilidades {
+        flex-direction: column;
+        /* Empilha a imagem e o texto em uma coluna */
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        padding-top: 5vh;
+
+    }
+
+    #img-habi {
+        width: 80vw;
+        height: 10vh;
+    }
+
+    #conjunto {
+        height: auto;
+        width: 85vw;
+    }
+
+    #conjunto img {
+        width: 12vw;
+        height: auto;
+        padding: 2%;
+    }
+
+    #conjunto img:hover {
+        width: 13vw;
+        height: auto;
+    }
+
+    #l-videos {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        width: 80vw;
+        font-size: 5vw;
+    }
+}
+

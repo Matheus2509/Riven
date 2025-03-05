@@ -7,16 +7,16 @@ setInterval(() => {
     proximaImg()
 }, 5000)
 
-function proximaImg(){
+function proximaImg() {
     cont++
 
-    if(cont > 4){
-        cont=1
+    if (cont > 4) {
+        cont = 1
     }
 
-    document.getElementById('radio'+cont).checked = true       
+    document.getElementById('radio' + cont).checked = true
 }
-function pas(){
+function pas() {
     resetarImagem()
     var txtv = document.querySelector('#representação')
     var video = document.querySelector('#video_base')
@@ -28,7 +28,7 @@ function pas(){
     alterarImagem()
 }
 
-function Q(){
+function Q() {
     resetarImagem()
     var txtv = document.querySelector('#representação')
     var video = document.querySelector('#video_base')
@@ -40,7 +40,7 @@ function Q(){
     alterarImagem()
 }
 
-function W(){
+function W() {
     resetarImagem()
     var txtv = document.querySelector('#representação')
     var video = document.querySelector('#video_base')
@@ -52,7 +52,7 @@ function W(){
     alterarImagem()
 }
 
-function E(){
+function E() {
     resetarImagem()
     var txtv = document.querySelector('#representação')
     var video = document.querySelector('#video_base')
@@ -64,8 +64,8 @@ function E(){
     alterarImagem()
 }
 
-function R(){
-    resetarImagem() 
+function R() {
+    resetarImagem()
     var txtv = document.querySelector('#representação')
     var video = document.querySelector('#video_base')
     var desc = document.querySelector('#descrição')
@@ -74,7 +74,7 @@ function R(){
     video.innerHTML = '<video src="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0092/ability_0092_R1.mp4" muted loop autoplay ></video>'
     desc.innerHTML = 'Riven fortalece sua arma de recordação com energia, recebendo Dano de Ataque e alcance. Durante este período, ela também pode usar Golpe de Vento, um poderoso ataque à distância, uma vez.'
     alterarImagem()
-}   
+}
 
 function alterarImagem() {
     img.classList.add("img-alterada");
@@ -84,4 +84,30 @@ function alterarImagem() {
 function resetarImagem() {
     img.classList.remove("img-alterada");
     console.log("Classe removida:", img.classList);
+}
+var RuneFundo = document.querySelector('#runeterra')
+
+function RuneterraCartaBase() {
+    RuneFundo.style.backgroundImage = "url('img/runeterra/fundo.png')";
+}
+function RuneterraCartaEvoluida() {
+    RuneFundo.style.backgroundImage = "url('img/runeterra/funda_final.png')";
+
+}
+
+var cartinha = document.querySelector('#Carta_Escada_Amostra')
+function Cortante() {
+    cartinha.innerHTML = '<img src="img/runeterra/fragmento-de-lamina-cortante-03nx010.webp" alt="">'
+}
+function firme() {
+    cartinha.innerHTML = '<img src="img/runeterra/fragmento-de-lamina-firme-03nx008.webp" alt="">'
+}
+function reluzente() {
+    cartinha.innerHTML = '<img src="img/runeterra/fragmento-de-lamina-reluzente-03nx012.webp" alt="">'
+}
+function exilio() {
+    cartinha.innerHTML = '<img src="img/runeterra/lamina-do-exilio-03nx011.webp" alt="">'
+}
+function punho() {
+    cartinha.innerHTML = '<img src="img/runeterra/punho-de-arma-de-riven-03nx007t3.webp" alt="">'
 }
