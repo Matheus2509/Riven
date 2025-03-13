@@ -77,13 +77,25 @@ function R() {
 }
 
 function alterarImagem() {
-    img.classList.add("img-alterada");
-    console.log("Classe adicionada:", img.classList);
+
+    if (window.innerWidth < 768) { 
+        img.classList.add("img-alterada-Mobile");
+        console.log("Classe adicionada:", img.classList);
+    }
+
+    else {
+        img.classList.add("img-alterada");
+        console.log("Classe adicionada:", img.classList);
+    }
 }
 
 function resetarImagem() {
-    img.classList.remove("img-alterada");
-    console.log("Classe removida:", img.classList);
+    
+        img.classList.remove("img-alterada-Mobile");
+        console.log("Classe removida:", img.classList);
+
+        img.classList.remove("img-alterada");
+        console.log("Classe removida:", img.classList);
 }
 var RuneFundo = document.querySelector('#runeterra')
 
